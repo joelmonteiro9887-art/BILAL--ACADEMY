@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="google-site-verification" content="id12obbxMnY-_mQU07FigEo3MypRvkP6w91qdSQf3MY" /><meta name="google-site-verification" content="id12obbxMnY-_mQU07FigEo3MypRvkP6w91qdSQf3MY" />vv  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilal Science et Maths | Academy</title>
+<style>
+:root {
+  --bg:#081426;
+  --panel:#10213b;
+  --blue:#3679f5;
+  --gold:#e8bd65;
+  --white:#f5f7fc;
+  --muted:#a9b7cc;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,sans-serif;
+  background:var(--bg);
+  color:var(--white);
+  line-height:1.6;
+}
+header{
+  display:flex;justify-content:space-between;
+  align-items:center;padding:20px 7%;
+  background:#0b1930;border-bottom:1px solid #263954;
+  position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:15px;
+}
+.logo{font-size:20px;font-weight:bold;color:var(--gold)}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{
+  padding:85px 8%;display:grid;
+  grid-template-columns:1.3fr 1fr;gap:35px;
+  align-items:center;
+  background:radial-gradient(circle at 85% 30%,#183c70,#081426 55%);
+}
+.tag{color:var(--gold);font-weight:bold;letter-spacing:2px}
+.hero h1{font-size:clamp(35px,5vw,60px);line-height:1.15;margin:20px 0}
+.hero h1 span{color:var(--gold)}
+.hero p{color:var(--muted);max-width:570px;margin-bottom:25px}
+.btn{
+  display:inline-block;padding:13px 22px;border:0;
+  border-radius:8px;background:var(--blue);
+  color:white;text-decoration:none;font-weight:bold;
+  cursor:pointer;margin:5px;
+}
+.btn.gold{background:var(--gold);color:#172238}
+.btn:hover{filter:brightness(1.15)}
+.math-art{
+  background:linear-gradient(145deg,#18365e,#101d35);
+  border:1px solid #36547b;border-radius:25px;
+  padding:35px;text-align:center;font-size:28px;
+  box-shadow:0 20px 50px #0005;
+}
+.math-art strong{display:block;color:var(--gold);font-size:48px;margin:20px}
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:15px;padding:25px 8%;background:#0c1a30;
+}
+.stat{text-align:center;padding:15px}
+.stat strong{display:block;color:var(--gold);font-size:26px}
+section{padding:65px 8%}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:32px;margin-bottom:8px}
+.section-title p{color:var(--muted)}
+.search{
+  display:block;width:100%;max-width:550px;margin:0 auto 30px;
+  padding:15px;border:1px solid #385071;border-radius:9px;
+  background:#10213b;color:white;font-size:16px;
+}
+.cards{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+.card{
+  background:var(--panel);padding:25px;border-radius:15px;
+  border:1px solid #263d5d;transition:.25s;
+}
+.card:hover{transform:translateY(-5px);border-color:var(--blue)}
+.icon{font-size:35px;margin-bottom:12px}
+.card h3{color:var(--gold);margin-bottom:10px}
+.card p{color:var(--muted);font-size:14px;margin-bottom:18px}
+.small-btn{
+  border:0;border-radius:7px;background:var(--blue);
+  color:white;padding:10px 15px;cursor:pointer;
+}
+.premium{
+  background:linear-gradient(130deg,#172d50,#101b30);
+  border:1px solid #9b793d;border-radius:20px;padding:35px;
+}
+.premium h2{color:var(--gold);font-size:30px;margin-bottom:12px}
+.premium p{color:var(--muted);margin-bottom:20px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.step{padding:22px;background:#10213b;border-radius:12px}
+.step strong{color:var(--gold);font-size:25px}
+footer{
+  text-align:center;padding:35px 15px;
+  background:#050e1c;color:var(--muted);
+}
+footer strong{color:var(--gold)}
+.modal{
+  display:none;position:fixed;inset:0;background:#000b;
+  z-index:20;align-items:center;justify-content:center;padding:20px;
+}
+.modal-box{
+  background:#132746;border:1px solid #48658b;
+  padding:30px;border-radius:15px;max-width:500px;width:100%;
+}
+.modal-box h2{color:var(--gold);margin-bottom:15px}
+.close{float:right;background:none;border:0;color:white;font-size:25px;cursor:pointer}
+@media(max-width:750px){
+  .hero{grid-template-columns:1fr;padding:55px 7%}
+  header{justify-content:center}
+  nav{justify-content:center}
+  .stats{padding:15px 3%}
+  section{padding:45px 6%}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">✦ BILAL ACADEMY</div>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#cours">Formations</a>
+    <a href="#exercices">Exercices</a>
+    <a href="#premium">Premium</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="accueil">
+  <div>
+    <div class="tag">L'EXCELLENCE PAR LA CONNAISSANCE</div>
+    <h1>Bienvenue chez <span>Bilal Science et Maths</span></h1>
+    <p>
+      Apprends les mathématiques autrement.
+      Découvre des cours, comprends les notions difficiles,
+      entraîne-toi et développe ton intelligence scientifique.
+    </p>
+    <a class="btn gold" href="#cours">Découvrir les cours</a>
+    <a class="btn" href="#premium">Espace Premium</a>
+  </div>
+  <div class="math-art">
+    ∑ &nbsp; ∫ &nbsp; π
+    <strong>∂²f / ∂x²</strong>
+    <div style="color:#a9b7cc;font-size:17px">
+      Comprendre. Calculer. Réussir.
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><strong>01</strong> Une nouvelle vision</div>
+  <div class="stat"><strong>24/7</strong> Apprendre à son rythme</div>
+  <div class="stat"><strong>∞</strong> Le savoir sans limites</div>
+</div>
+
+<section id="cours">
+  <div class="section-title">
+    <h2>📚 Bibliothèque des formations</h2>
+    <p>Explore les grandes branches des mathématiques et des sciences.</p>
+  </div>
+  <input class="search" id="search" placeholder="Rechercher une matière...">
+  <div class="cards" id="courseCards">
+    <div class="card">
+      <div class="icon">📐</div><h3>Algèbre</h3>
+      <p>Équations, matrices, espaces vectoriels et applications linéaires.</p>
+      <button class="small-btn" onclick="openCourse('Algèbre','Découvre les équations, les matrices et les espaces vectoriels.')">Découvrir</button>
+    </div>
+    <div class="card">
+      <div class="icon">∫</div><h3>Analyse</h3>
+      <p>Limites, continuité, dérivées, intégrales et suites.</p>
+      <button class="small-btn" onclick="openCourse('Analyse','Étudie les limites, les fonctions, les dérivées et les intégrales.')">Découvrir</button>
+    </div>
+    <div class="card">
+      <div class="icon">📏</div><h3>Géométrie affine</h3>
+      <p>Espaces affines, repères, coordonnées et transformations.</p>
+      <button class="small-btn" onclick="openCourse('Géométrie affine','Apprends les espaces affines, les repères et les coordonnées.')">Découvrir</button>
+    </div>
+    <div class="card">
+      <div class="icon">🎲</div><h3>Probabilités</h3>
+      <p>Événements, variables aléatoires et lois de probabilité.</p>
+      <button class="small-btn" onclick="openCourse('Probabilités','Découvre les probabilités et les variables aléatoires.')">Découvrir</button>
+    </div>
+    <div class="card">
+      <div class="icon">⚙️</div><h3>Physique</h3>
+      <p>Mécanique, électricité et méthodes de résolution.</p>
+      <button class="small-btn" onclick="openCourse('Physique','Découvre les bases de la physique et ses exercices.')">Découvrir</button>
+    </div>
+    <div class="card">
+      <div class="icon">💻</div><h3>Informatique</h3>
+      <p>Algorithmique, logique et programmation.</p>
+      <button class="small-btn" onclick="openCourse('Informatique','Découvre les algorithmes et la programmation.')">Découvrir</button>
+    </div>
+  </div>
+</section>
+
+<section id="exercices">
+  <div class="section-title">
+    <h2>🧠 Centre d'entraînement</h2>
+    <p>La pratique est le chemin vers la maîtrise.</p>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">✍️</div>
+      <h3>Exercices gratuits</h3>
+      <p>Entraîne-toi avec des questions et des exercices progressifs.</p>
+      <button class="small-btn" onclick="openCourse('Exercices gratuits','Une bibliothèque d’exercices sera bientôt disponible.')">Explorer</button>
+    </div>
+    <div class="card">
+      <div class="icon">📖</div>
+      <h3>Corrections détaillées</h3>
+      <p>Comprends chaque étape d'une résolution mathématique.</p>
+      <button class="small-btn" onclick="openCourse('Corrections','Les corrections détaillées seront ajoutées progressivement.')">Explorer</button>
+    </div>
+    <div class="card">
+      <div class="icon">🏆</div>
+      <h3>Défis scientifiques</h3>
+      <p>Teste ton niveau avec des problèmes stimulants.</p>
+      <button class="small-btn" onclick="openCourse('Défis','Les défis mathématiques arrivent bientôt.')">Participer</button>
+    </div>
+  </div>
+</section>
+
+<section id="premium">
+  <div class="premium">
+    <div class="tag">✦ BILAL PREMIUM</div>
+    <h2>Va plus loin dans tes connaissances.</h2>
+    <p>
+      Accède à des exercices de niveau avancé,
+      des corrigés approfondis et des outils intelligents.
+    </p>
+    <div class="cards">
+      <div class="card">
+        <h3>Problèmes complexes</h3>
+        <p>Des exercices difficiles avec des explications approfondies.</p>
+        <button class="small-btn" onclick="openCourse('Premium','Cet espace sera ouvert après la mise en place des abonnements.')">En savoir plus</button>
+      </div>
+      <div class="card">
+        <h3>Assistant IA mathématique</h3>
+        <p>Un futur assistant pour analyser les exercices et guider les étudiants.</p>
+        <button class="small-btn" onclick="openCourse('Assistant IA','La connexion à un véritable service d’intelligence artificielle sera ajoutée dans une prochaine étape.')">Découvrir</button>
+      </div>
+    </div>
+    <p style="margin-top:20px">Les fonctionnalités payantes seront activées après l'installation d'un système sécurisé de paiement.</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h2>À propos de la plateforme</h2>
+    <p>Une initiative éducative créée pour rendre les sciences plus accessibles.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><strong>01</strong><h3>Apprendre</h3><p>Construire des bases solides.</p></div>
+    <div class="step"><strong>02</strong><h3>Comprendre</h3><p>Maîtriser les notions difficiles.</p></div>
+    <div class="step"><strong>03</strong><h3>Réussir</h3><p>Progresser grâce à la pratique.</p></div>
+  </div>
+</section>
+
+<footer>
+  <strong>BILAL SCIENCE ET MATHS</strong>
+  <p>Une plateforme créée par Joël Bilal.</p>
+  <p>© 2026 - Tous droits réservés.</p>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" onclick="closeCourse()">×</button>
+    <h2 id="modalTitle">Formation</h2>
+    <p id="modalText"></p>
+    <br>
+    <button class="small-btn" onclick="closeCourse()">Fermer</button>
+  </div>
+</div>
+
+<script>
+function openCourse(title,text){
+  document.getElementById('modalTitle').textContent=title;
+  document.getElementById('modalText').textContent=text;
+  document.getElementById('modal').style.display='flex';
+}
+function closeCourse(){
+  document.getElementById('modal').style.display='none';
+}
+document.getElementById('search').addEventListener('input',function(){
+  const value=this.value.toLowerCase();
+  document.querySelectorAll('#courseCards .card').forEach(card=>{
+    card.style.display=card.textContent.toLowerCase().includes(value)?'block':'none';
+  });
+});
+document.getElementById('modal').addEventListener('click',function(e){
+  if(e.target===this)closeCourse();
+});
+</script>
+<section id="licences" style="padding:30px;text-align:center;">
+<h2>Nos formations universitaires</h2>
+
+<div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;">
+
+<div class="card">
+<h3>LICENCE 1</h3>
+<p>Mathématiques et Physique</p>
+</div>
+
+<div class="card">
+<h3>LICENCE 2</h3>
+<p>Mathématiques et Physique</p>
+</div>
+
+<div class="card">
+<h3>LICENCE 3</h3>
+<p>Mathématiques et Physique</p>
+</div>
+
+</div>
+</section>
+</body>
+</html>
